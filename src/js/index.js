@@ -1,6 +1,5 @@
-const arr = [23, 44, 44];
-let myfunc = a => {
-    console.log(`too: ${a}`)
-}
-const arr2 = [...arr, 44, 123];
-myfunc(arr2[1]);
+import axios from "axios";
+import Search from "./model/search";
+
+let search = new Search("Pasta");
+search.doSearch().then((r) => console.log(r));
